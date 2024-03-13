@@ -181,7 +181,10 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
-
+        Tymon\JWTAuth\Providers\LaravelServiceProvider::class, // tuantv add
+        
+        Prettus\Repository\Providers\RepositoryServiceProvider::class, // tuantv add
+        
         /*
          * Package Service Providers...
          */
@@ -194,7 +197,7 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-
+        \App\Providers\RepositoryServiceProvider::class, // tuantv add
     ],
 
     /*
